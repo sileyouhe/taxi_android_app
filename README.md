@@ -6,16 +6,16 @@
 
 支持登录注册  
 司机可以定位，导航，接单  
-客人可以定位，选择出发地和目的地，下单
+客人可以定位，选择出发地和目的地，下单  
 
 运行环境
 ---
-JAVA
-Android studio
+JAVA  
+Android studio  
 
 使用的库和技术
 ----
-UI： 使用Android studio完成界面设计
+UI： 使用Android studio完成界面设计  
 地图显示、导航、定位：百度地图API  
 
 
