@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp"
+        android:gravity="center"
+        android:text="乘客:"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/money"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:gravity="center"
+        android:text="余额：100"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:hint="请输入金额" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/money"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/charge"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            android:layout_height="wrap_content"
+            android:text="充值" />
+
+        <Button
+            android:id="@+id/withdraw"
+            android:layout_marginRight="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现" />
+    </RelativeLayout>
+</RelativeLayout>

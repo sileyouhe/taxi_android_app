@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/site_row"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/passenger"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/account" />
+
+        <TextView
+            android:id="@+id/callNum"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="乘客/司机+账户"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/driver"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/message" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/from_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/site_row"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="from:"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/fromText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入您出发的位置"
+            android:maxWidth="290dp"
+            android:minWidth="290dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/to_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_row"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:text="to:"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/toText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入您将要去的位置"
+            android:maxWidth="290dp"
+            android:minWidth="290dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/to_row">
+
+        <Button
+            android:id="@+id/btnRoute"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/guihua"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center|right"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/account"
+            android:background="@drawable/wallet"
+            android:layout_centerInParent="true"
+            android:text="账户" />
+
+        <Button
+            android:id="@+id/BtnNavi"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/daohang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|right"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/other"
+        android:layout_marginTop="3dp">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/retu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/site" />
+
+        <Button
+            android:id="@+id/callCar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/callcar"
+            android:layout_gravity="bottom|center_horizontal"
+             />
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/pay"
+            android:layout_marginBottom="100dp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
