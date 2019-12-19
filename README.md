@@ -12,6 +12,7 @@
 ---
 JAVA  
 Android studio  
+Android SDK Platform 26
 
 使用的库和技术
 ----
