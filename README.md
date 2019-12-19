@@ -2,7 +2,7 @@
 
 Introduction
 ----
-An Android Ridesharing App developed in 2018  
+An Android Ridesharing App developed in fall 2017
 
 sign In / Register  
 
