@@ -2,11 +2,11 @@
 
 Introduction
 ----
-an Android Ridesharing App developed in 2018  
+An Android Ridesharing App developed in 2018  
 
-sign in / registor  
+sign In / Register  
 
-real-time map, geolocation and navigation
+Real-Time map, Geolocation and Navigation
 
 Development
 ---
