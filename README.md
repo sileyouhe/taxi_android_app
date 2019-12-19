@@ -16,8 +16,8 @@ Android SDK Platform 26
 
 Technologies Used
 ----
-UI: Android studio
-map：Baidu map API  
+UI: Android studio  
+Map：Baidu map API  
 
 
 
