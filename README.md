@@ -1,5 +1,26 @@
 # taxi_android_app
 
+Introduction
+----
+an Android Ridesharing App developed in 2018  
+
+sign in / registor  
+
+real-time map, geolocation and navigation
+
+Development
+---
+Java  
+Android Studio  
+Android SDK Platform 26
+
+Technologies Used
+----
+UI: Android studio
+map：Baidu map API  
+
+
+
 项目介绍
 ----
 2018年大三移动编程课的项目，一个打车软件，当时从0开始学习JAVA和Android，最终做出来的成果不是很完整，之后也没有再去完善它  
